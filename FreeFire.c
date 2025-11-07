@@ -7,7 +7,29 @@
 // Nível: Mestre
 // Este programa simula o gerenciamento avançado de uma mochila com componentes coletados durante a fuga de uma ilha.
 // Ele introduz ordenação com critérios e busca binária para otimizar a gestão dos recursos.
+#define MAX_ITENS 100
+typedef struct {
+    int id;
+    char nome[50];
+    int quantidade;
+    char tipo[30];
+}Item;
 
+Item mochila[MAX-MAX_ITENS];
+int totalItens=0;
+
+void cadastraItem() {
+    if(totalItens>=MAX_ITENS){
+        printf("Mochila cheia. Não é possível adicionar mais itens.");
+        return;
+    }
+    Item novo;
+    printf("ID do item:");
+    scanf("%d", &novo.id);
+    printf("Nome do item:");
+    scanf("%[^\n]",novo.nome);
+    
+}
 int main() {
     // Menu principal com opções:
     // 1. Adicionar um item

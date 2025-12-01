@@ -7,6 +7,7 @@
 // Nível: Mestre
 // Este programa simula o gerenciamento avançado de uma mochila com componentes coletados durante a fuga de uma ilha.
 // Ele introduz ordenação com critérios e busca binária para otimizar a gestão dos recursos.
+// Definindo variáveis
 #define MAX_ITENS 100
 typedef struct {
     int id;
@@ -15,7 +16,7 @@ typedef struct {
     char tipo[30];
 }Item;
 
-Item mochila[MAX-MAX_ITENS];
+Item mochila[MAX_ITENS];
 int totalItens=0;
 
 void cadastraItem() {
